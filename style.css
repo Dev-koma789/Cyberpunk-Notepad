@@ -148,3 +148,41 @@ textarea {
   border-color: var(--neon-pink);
   box-shadow: 0 0 20px var(--neon-pink);
 }
+
+/* style.css の末尾に追加 */
+
+/* 保存時の激しいグリッチ演出 */
+.glitch-active {
+  animation: glitch-skew 0.3s steps(2, end) infinite;
+}
+
+@keyframes glitch-skew {
+  0% {
+    transform: skew(0deg);
+    filter: hue-rotate(0deg);
+  }
+  20% {
+    transform: skew(5deg);
+    filter: hue-rotate(90deg);
+  }
+  40% {
+    transform: skew(-8deg);
+    opacity: 0.8;
+  }
+  60% {
+    transform: skew(10deg);
+    filter: brightness(2);
+  }
+  80% {
+    transform: skew(-20deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+/* テキストエリアに入力中のネオン発光 */
+textarea:focus {
+  box-shadow: 0 0 15px var(--neon-pink);
+  transition: 0.2s;
+}
