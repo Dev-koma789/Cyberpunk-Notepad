@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サイバーパンク風メモ帳</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <main>
+      <div class="terminal-header">
+        <span class="system-status">SYSTEM_ACTIVE</span>
+        <span class="version">v1.0.42</span>
+      </div>
+
+      <section class="memo-wrap">
+        <h1 data-text="NEURAL_LINK_MEMO">NEURAL_LINK_MEMO</h1>
+        <div class="textarea-container">
+          <textarea id="text" placeholder="> DATA_INPUT_REQUIRED..."></textarea>
+          <div class="scan-line"></div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="info-panel">
+          <span id="char-count">CHARS: 0</span>
+          <span id="status"></span>
+        </div>
+        <div class="btn-group">
+          <button id="delete" class="cyber-btn delete">PURGE</button>
+          <button id="save" class="cyber-btn save">UPLOAD</button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
