@@ -2,6 +2,8 @@
 
 サイバーパンク風の UI で動くメモ帳。LocalStorage に保存するシングルページ Web アプリ。
 
+![スクリーンショット](screenshot.webp)
+
 ## できること
 
 - テキスト入力 → 「UPLOAD」で LocalStorage に保存
